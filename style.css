@@ -1,0 +1,462 @@
+:root{
+    /* ### Primary */
+
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+/* ### Neutral */
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+  /* font-sixe */
+  --base-font-size:1.125rem;
+  /* font-family */
+  --font-family: 'Bai Jamjuree', sans-serif;
+  /* font-weight */
+  --regular:400;
+  --bolder:600;
+}
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  body{
+    max-width: 1440px;
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    font-family: var(--font-family);
+    background-color: #fff;
+    margin-bottom: 2em;
+  }
+.container{
+    background-image: url(./images/bg-header-mobile.png);
+    /* border: 1px solid green; */
+    padding: 3em 1em ;
+    background-repeat: no-repeat;
+    
+}
+@media screen and (min-width: 382px){
+    .container{
+        background-image: url(./images/bg-header-desktop.png);
+    }
+}
+.logo-icon{
+    margin-inline: auto;
+  
+}
+.content{
+    margin-top: 2em;
+    text-align: center;
+}
+.title{
+    max-width:10em;
+    margin-inline: auto;
+    font-size: 1.8rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: var(--bolder);
+}
+.text{
+    padding-top: 1em;
+    font-size:1rem;
+    color: var(--Grayish-Blue);
+    font-weight: var(--regular);
+
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    /* width: 35em; */
+    gap: 1rem;
+    margin-inline: auto; 
+}
+button{
+    border-radius: 1.5em;
+    padding: 0.5em 4em;
+    border: none;
+    background-color: var(--Strong-Cyan);
+    color: white;
+    font-weight:var(--bolder);
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.sec-button{
+    background-color: var(--Light-Blue);
+}
+.container-1{
+    /* border: 1px solid blue; */
+    margin: 5.6em 1em 1em;
+    text-align: center;
+
+}
+.first-title{
+    font-size: 1.5em;
+    max-width: 10em;
+    margin-inline:auto;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: var(--bolder);
+}
+.first-para{
+    margin-top: 0.5em;
+    color: var(--Grayish-Blue);
+    padding: 1em;
+}
+.sub-container{
+    margin:2em 1em 1em;
+}
+.computer-img{
+    margin-inline: auto;
+}
+.points{
+    margin-top: 3em;
+}
+.sec-1{
+    padding-bottom: 2em;
+}
+.sub-title{
+    padding-bottom: 1em;
+    font-size: 1.3rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: var(--bolder);
+}
+.sub-para{
+    font-size: 1em;
+    color: var(--Grayish-Blue);
+    font-weight: var(--regular);
+}
+.container-2{
+    text-align: center;
+    /* border: 1px solid brown; */
+    margin: 10em 1em 1em;
+}
+.container-2-title{
+    font-size: 1.5rem;
+    max-width: 10em;
+    margin-inline: auto;
+    line-height: 1.2em;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: var(--bolder);
+}
+.container-2-text{
+    padding: 1em;
+    color: var(--Grayish-Blue);
+    font-size: 1em;
+    font-weight: var(--regular);
+}
+.image-devices{
+    margin-top: 2em;
+}
+.container-3{
+    text-align: center;
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    margin: 8em 1em 1em;
+}
+.icon{
+    margin-inline: auto;
+   
+}
+.title-3{
+   font-size: 1.5rem;
+   max-width: 10em;
+   margin-inline:auto;
+   line-height: 1.2em;
+   font-weight: var(--bolder);
+   color: var(--Dark-Grayish-Blue);
+}
+.text-3{
+    text-align: center;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: var(--regular);
+    color: var(--Grayish-Blue);
+}
+.icon-info {
+    margin-top: 4em;
+
+}
+.sub-box{
+    margin-top: 4em;
+}
+.sub-3-title{
+    padding-top: 2em;
+    font-size: 1.2rem;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: var(--bolder);
+}
+.sub-3-text{
+    margin-top: 1em;
+    padding: 0 1em;
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+    font-weight: var(--regular);
+}
+.container-3-sub-container{
+    /* border: 2px solid green; */
+    margin: 1em;
+}
+.company-icon{
+    margin-inline: auto;
+    padding-top: 3em;
+    width: 120px;
+}
+.container-4{
+    margin: 8em 1em 1em;
+    text-align: center;
+    
+    /* border: 1px saddlebrown; */
+}
+.titles{
+    max-width:12em;
+    margin-inline: auto;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1.5rem;
+    font-weight: var(--bolder);
+}
+.texts{
+    padding: 0.5em;
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+}
+footer{
+    /* background-color:hsl(201, 11%, 66%, 0.2); */
+    margin-top: 8em;
+}
+.footer-container{
+    background-color:hsl(201, 11%, 66%, 0.2);  
+}
+
+.logo-img{
+ margin-inline:auto;
+ padding-top: 2em;
+ width: 100px;
+}
+.fotter-content{
+   margin-top:2em ;
+   text-align: center;
+}
+.sector{
+    margin: 1em;
+}
+.f-text{
+    font-size: 1rem;
+    padding-top: 1em ;
+    font-weight: var(--regular);
+    cursor: pointer;
+}
+.f-text:hover{
+    color: var(--Strong-Cyan);
+}
+.footer-social-icon{ 
+    margin-top:3em;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2em;
+   padding-bottom: 2rem;
+}
+
+.footer-social-icon img:hover{
+   
+    cursor: pointer;
+}
+@media screen and (min-width:  1051px){
+       body{
+        max-width: 1440px;
+       }
+
+    .title{
+        max-width: 20em;
+    }
+    .text{
+        max-width: 35em;
+        margin-inline: auto;
+    }
+    .sub-container{
+        position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+
+      
+   
+    }
+    
+ .computer-img{
+    position: absolute;
+    /* left: -8em;
+    top: 2em; */
+    top:3%;
+    left: -10%;
+    
+    width: 45rem;
+ }
+    .points{
+        margin-left: 50em;
+        text-align: left;
+        width: 20rem;
+    }
+    .sec-1{
+        padding-bottom: 1em;
+    }
+    .sub-title{
+        padding-bottom: 0.5em;
+    }
+    .first-title{
+        max-width: 1024px;
+    }
+    .first-para{
+        max-width: 675px;
+        margin-inline: auto;
+    }
+    .container-2{
+        margin-top: 20em;
+    }
+    .container-2-title{
+        max-width: 1024px;
+    
+    }
+    .container-2-text{
+        max-width: 675px;
+        margin-inline: auto;
+    }
+    .image-devices{
+        margin-inline: auto;
+    }
+    .icon-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1024px;
+    margin-inline: auto;
+    }
+    .sub-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-3-text{
+    max-width: 35em;
+    } 
+    .title-3{
+        max-width: 50em;
+        font-size: 2rem;
+        margin-inline: auto;
+    }
+    .icon-info{
+        margin-top: 0.8em;
+        margin-inline: auto;
+    }
+    
+.buttons{
+        flex-direction: row;
+        margin-inline: auto;
+    }
+    
+.icon{
+    margin-bottom: 1em;
+ }
+.container-3-sub-container{
+    margin-top: 10em;
+    display: flex;
+    max-width: 1024px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+ }
+
+.titles{
+    max-width: 20em;
+ }
+.texts{
+    max-width: 40em;
+    margin-inline: auto;
+ }
+
+ footer{
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-inline: auto;
+   
+
+ }
+ .fotter-content{
+    display: flex;
+    justify-content: center;
+    margin: 0 12em 0 3em;
+    gap:2em;
+    align-items: center;
+  
+ }
+ .f-text{
+    text-align: left;
+    word-break: keep-all;
+ }
+
+.logo-img{
+    width:6em;
+    padding-right: 2em;
+}
+
+ .s-3{
+    align-self: flex-start;
+ } *
+
+ .sub-para{
+    max-width: 19.12em;
+ }
+    
+}
